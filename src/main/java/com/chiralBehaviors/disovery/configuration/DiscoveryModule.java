@@ -18,7 +18,6 @@ package com.chiralBehaviors.disovery.configuration;
 import java.net.InetSocketAddress;
 
 import com.fasterxml.jackson.databind.module.SimpleModule;
-import com.hellblazer.nexus.config.GossipScopeConfiguration;
 import com.hellblazer.slp.config.ServiceScopeConfiguration;
 import com.hellblazer.utils.deserializers.InetSocketAddressDeserializer;
 import com.hellblazer.utils.fd.FailureDetectorFactory;
@@ -41,15 +40,12 @@ public class DiscoveryModule extends SimpleModule {
      */
     @Override
     public void setupModule(SetupContext context) {
-        super.setupModule(context);
-        setMixInAnnotation(ServiceScopeConfiguration.class,
-                           GossipScopeConfiguration.class);
-        super.setupModule(context);
         setMixInAnnotation(ServiceScopeConfiguration.class,
                            DiscoveryMixin.class);
         setMixInAnnotation(FailureDetectorFactory.class, FdFactoryMixin.class);
         addDeserializer(InetSocketAddress.class,
                         new InetSocketAddressDeserializer());
+        super.setupModule(context);
     }
 
 }
