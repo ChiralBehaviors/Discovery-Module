@@ -42,10 +42,10 @@ public class DiscoveryModule extends SimpleModule {
      */
     @Override
     public void setupModule(SetupContext context) {
+        setMixInAnnotation(EngineConfiguration.class, EngineMixin.class);
         setMixInAnnotation(ServiceScopeConfiguration.class,
                            DiscoveryMixin.class);
         setMixInAnnotation(FailureDetectorFactory.class, FdFactoryMixin.class);
-        setMixInAnnotation(EngineConfiguration.class, EngineMixin.class);
         addDeserializer(InetSocketAddress.class,
                         new InetSocketAddressDeserializer());
         super.setupModule(context);
