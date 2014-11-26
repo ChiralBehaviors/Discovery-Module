@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.chiralBehaviors</groupId>
 	<artifactId>discovery-module</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>Discovery Module</name>
 	<description>Common configuration for polymorphic deserialization for service discovery</description>
 
@@ -13,8 +13,8 @@
 			<url>http://repository-chiralbehaviors.forge.cloudbees.com/snapshot/</url>
 		</repository>
 		<repository>
-			<id>hellblazer-snapshots</id>
-			<url>http://repository-hal900000.forge.cloudbees.com/snapshot/</url>
+			<id>ChiralBehaviors-release</id>
+			<url>http://repository-chiralbehaviors.forge.cloudbees.com/release/</url>
 		</repository>
 	</repositories>
 
@@ -51,12 +51,12 @@
 		<dependency>
 			<groupId>com.hellblazer</groupId>
 			<artifactId>nexus</artifactId>
-			<version>1.0.2-SNAPSHOT</version>
+			<version>1.0.2</version>
 		</dependency>
 		<dependency>
 			<groupId>com.chiralBehaviors</groupId>
 			<artifactId>hive</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>0.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
