@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.chiralBehaviors</groupId>
 	<artifactId>discovery-module</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<name>Discovery Module</name>
 	<description>Common configuration for polymorphic deserialization for service discovery</description>
 
@@ -56,7 +56,7 @@
 		<dependency>
 			<groupId>com.chiralBehaviors</groupId>
 			<artifactId>hive</artifactId>
-			<version>0.0.2-SNAPSHOT</version>
+			<version>0.0.2</version>
 		</dependency>
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
